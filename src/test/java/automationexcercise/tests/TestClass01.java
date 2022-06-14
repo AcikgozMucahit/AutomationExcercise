@@ -10,5 +10,6 @@ public class TestClass01 {
     public void test01(){
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
         Driver.getDriver().close();
+        System.out.println("FOr example");
     }
 }
