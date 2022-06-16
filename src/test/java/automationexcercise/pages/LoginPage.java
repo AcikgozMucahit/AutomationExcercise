@@ -5,19 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
-    public HomePage(){
-        PageFactory.initElements(Driver.getDriver(), this);
+public class LoginPage {
+    public LoginPage(){
+        PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "//a[@href='/login']")
-    public WebElement signUpButton;
     @FindBy(xpath = "(//h2)[3]")
     public WebElement newUserSignUpText;
     @FindBy(xpath = "//input[@name='name']")
     public WebElement nameBox;
-    @FindBy(xpath = "//*[text()='Bestami Colak']")
-    public WebElement loggedInAs;
-    @FindBy(xpath = "//a[@href='/delete_account']")
-    public WebElement deleteAccountButton;
+    @FindBy(xpath = "(//input[@name='email'])[2]")
+    public WebElement emailAddressBox;
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
+    public WebElement signUPButton;
 }
-
