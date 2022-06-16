@@ -6,10 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ProductsPage {
-    public ProductsPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
-    }
+    public ProductsPage() {
 
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
     //Click on 'Products' button
     @FindBy(xpath = "//a[@href='/products']")
     public WebElement productsOnHomePage;
