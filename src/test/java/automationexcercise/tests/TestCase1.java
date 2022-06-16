@@ -24,7 +24,7 @@ public class TestCase1 {
     public void automationSignUpTest(){
         // 1. Launch browser
         //2. Navigate to url 'http://automationexercise.com'
-        Driver.getDriver().get(ConfigReader.getProperty("automation_exercise_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 
         //3. Verify that home page is visible successfully
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("https://www.automationexercise.com/"));
