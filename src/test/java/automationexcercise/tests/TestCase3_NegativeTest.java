@@ -17,7 +17,7 @@ public class TestCase3_NegativeTest {
     public void NegativeTest() {
         //1. Launch browser
         //2. Navigate to url 'http://automationexercise.com'
-        Driver.getDriver().get(ConfigReader.getProperty("test_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 
         //3. Verify that home page is visible successfully
         Assert.assertEquals( Driver.getDriver().getCurrentUrl(), "https://www.automationexercise.com/");
