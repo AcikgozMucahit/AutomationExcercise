@@ -12,7 +12,7 @@ public class TC05_ExistingEmailTest {
     public void existingEmail(){
 //1. Launch browser
 //2. Navigate to url 'http://automationexercise.com'
-        Driver.getDriver().get(ConfigReader.getProperty("automation_exercise_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 //3. Verify that home page is visible successfull
         existingEmailPage.homePage.sendKeys(ConfigReader.getProperty("home_page"));
 //4. Click on 'Signup / Login' button
