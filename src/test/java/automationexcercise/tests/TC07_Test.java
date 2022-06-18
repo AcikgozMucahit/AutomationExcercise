@@ -13,7 +13,7 @@ public class TC07_Test{
     public void tc07_test(){
 //1. Launch browser
 //2. Navigate to url 'http://automationexercise.com'
-        Driver.getDriver().get(ConfigReader.getProperty("automation_exercise_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 //3. Verify that home page is visible successfully
         tc07_page.homePage.click();
 //4. Click on 'Test Cases' button
