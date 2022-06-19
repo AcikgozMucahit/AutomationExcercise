@@ -22,7 +22,7 @@ public class TestCase1 {
 
     @Test
     public void automationSignUpTest(){
-        // 1. Launch browser
+        // 1. Launch browser.
         //2. Navigate to url 'http://automationexercise.com'
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 
