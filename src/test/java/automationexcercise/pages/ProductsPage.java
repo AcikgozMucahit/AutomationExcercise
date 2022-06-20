@@ -41,4 +41,10 @@ public class ProductsPage {
     // Second product of the product list
     @FindBy(xpath = "(//p)[6]")
     public WebElement secondProductMenTshirt;
+
+    @FindBy(xpath = "(//li//a)[9]")
+    public WebElement loggedInAsUsername;
+
+    @FindBy(xpath = "(//a[@style])[1]")
+    public WebElement logoutButton;
 }

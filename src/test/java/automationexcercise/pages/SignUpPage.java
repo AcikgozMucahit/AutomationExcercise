@@ -39,4 +39,6 @@ public class SignUpPage {
     public WebElement mobileBox;
     @FindBy(xpath = "(//button[@type='submit'])[1]")
     public WebElement createAccount;
+    @FindBy (xpath = "//*[text()='Login to your account']")
+    public WebElement LoginToYourAccountText;
 }
