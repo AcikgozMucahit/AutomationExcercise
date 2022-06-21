@@ -24,4 +24,17 @@ public class HomePage {
 
     @FindBy(xpath = "//div[@class = 'alert-success alert']")
     public WebElement subscriptionSuccessAlert;
+
+    @FindBy(xpath = "//a[@href='/login']")
+    public WebElement signUpButton;
+    @FindBy(xpath = "(//h2)[3]")
+    public WebElement newUserSignUpText;
+    @FindBy(xpath = "//input[@name='name']")
+    public WebElement nameBox;
+    @FindBy(xpath = "//*[text()='Bestami Colak']")
+    public WebElement loggedInAs;
+    @FindBy(xpath = "//a[@href='/delete_account']")
+    public WebElement deleteAccountButton;
+
 }
+
