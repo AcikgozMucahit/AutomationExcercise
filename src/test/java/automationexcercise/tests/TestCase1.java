@@ -92,6 +92,6 @@ public class TestCase1 {
         deleteAccountPage.deleteButtonSecond.click();
         //18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
         //This page is not showing properly
-        Driver.closeDriver();
+        //Driver.closeDriver();
     }
 }

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ProductsPage {
     public ProductsPage() {
 
@@ -41,4 +43,8 @@ public class ProductsPage {
     // Second product of the product list
     @FindBy(xpath = "(//p)[6]")
     public WebElement secondProductMenTshirt;
+
+
+
+
 }
