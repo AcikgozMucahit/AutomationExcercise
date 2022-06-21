@@ -16,7 +16,7 @@ public class TestCase10 {
     public void testCase09() {
         homePage = new HomePage();
 
-        Driver.getDriver().get(ConfigReader.getProperty("automationPracticeWebSite"));
+        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
         String title = Driver.getDriver().getTitle();
         String url = Driver.getDriver().getCurrentUrl();
 
