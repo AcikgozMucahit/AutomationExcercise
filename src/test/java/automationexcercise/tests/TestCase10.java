@@ -22,10 +22,10 @@ public class TestCase10 {
 
         SoftAssert softAssert = new SoftAssert();
         Assert.assertEquals(title, ConfigReader.getProperty("title"), "The title did not match");
-        Assert.assertEquals(url, ConfigReader.getProperty("url"), "The url did not match");
+        Assert.assertEquals(url, ConfigReader.getProperty("base_url"), "The url did not match");
 
         softAssert.assertEquals(title, ConfigReader.getProperty("title"), "The title did not match");
-        softAssert.assertEquals(url, ConfigReader.getProperty("url"), "The url did not match");
+        softAssert.assertEquals(url, ConfigReader.getProperty("base_url"), "The url did not match");
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         String isPageCompleted = js.executeScript("return document.readyState").toString();
