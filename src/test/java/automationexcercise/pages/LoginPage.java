@@ -17,4 +17,20 @@ public class LoginPage {
     public WebElement emailAddressBox;
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     public WebElement signUPButton;
+    @FindBy(xpath = "(//input[@type='email'])[1]")
+    public WebElement emailBox;
+
+    @FindBy(xpath = "(//input[@type='password'])[1]")
+    public WebElement passwordBox;
+
+    @FindBy(xpath = "(//button[@type='submit'])[1]")
+    public WebElement loginPageLoginButton;
+
+    @FindBy(xpath = "//li[9]//a[1]")
+    public WebElement loginCheck;
+
+    @FindBy(xpath = "(//a[normalize-space()='Delete Account'])[1]")
+    public WebElement deleteButton;
+    @FindBy(xpath = "//h2[text()='Login to your account']")
+    public WebElement loginPageVisibilityCheck;
 }
