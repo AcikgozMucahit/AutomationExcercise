@@ -36,8 +36,5 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/delete_account']")
     public WebElement deleteAccountButton;
 
-    @FindBy(partialLinkText = "Signup")
-    public WebElement loginButton;
-
 }
 
