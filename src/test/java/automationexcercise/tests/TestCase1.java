@@ -27,7 +27,7 @@ public class TestCase1 {
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
 
         //3. Verify that home page is visible successfully
-        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("https://www.automationexercise.com/"));
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("https://automationexercise.com/"));
         //4. Click on 'Signup / Login' button
         homePage.signUpButton.click();
 
