@@ -11,11 +11,4 @@ public class DeleteAccountPage {
     }
     @FindBy(xpath = "//button[@class='btn btn-danger']")
     public WebElement deleteButtonSecond;
-
-    @FindBy(xpath = "//button[@class='btn btn-danger button-form js-tooltip']")
-        public WebElement deletePageButton;
-
-    @FindBy(xpath = "//b[normalize-space()='HTTP 405 Method Not Allowed']")
-        public WebElement deleteCheck;
-
 }
